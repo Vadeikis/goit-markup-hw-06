@@ -19,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <!-- Header -->
@@ -26,7 +27,7 @@
       <div class="container-header container">
         <nav class="nav">
           <a href="./index.html" class="logo-link link"
-            >WEB <span class="link-studio">Studio</span></a
+            >WEB<span class="link-studio">Studio</span></a
           >
           <ul class="nav-list list">
             <li>
@@ -55,6 +56,81 @@
             </li>
           </ul>
         </address>
+        <button
+          type="button"
+          class="js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="mobile-line"></span>
+        </button>
+      </div>
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg class="menu-button-svg" width="8" height="8">
+            <use href="./images/modal.svg#icon-modal"></use>
+          </svg>
+        </button>
+        <nav class="mobile-nav">
+          <ul class="mobile-list list">
+            <li>
+              <a href="./index.html" class="menu-link link current-burger"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a href="./portfolio.html" class="menu-link link">Portfolio</a>
+            </li>
+            <li><a href="" class="menu-link link">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <address class="menu-address">
+          <ul class="menu-address-list list">
+            <li class="burger-address-item">
+              <a class="address-phone link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="burger-address-item">
+              <a class="address-email link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="menu-icons list">
+          <li class="fourth-item">
+            <a class="menu-icon-svg link" href="#">
+              <svg class="menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="fourth-item">
+            <a class="menu-icon-svg link" href="#">
+              <svg class="menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="fourth-item">
+            <a class="menu-icon-svg link" href="#">
+              <svg class="menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="fourth-item">
+            <a class="menu-icon-svg link" href="#">
+              <svg class="menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -540,10 +616,10 @@
     </div>
 
     <!------------ Mobile menu ------------>
-    <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="none menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <div class="close-style">
-          <svg class="menu-button-svg" width="8" height="8">
+          <svg class="menu-button-svg js-close-menu" width="8" height="8">
             <use href="./images/modal.svg#icon-modal"></use>
           </svg>
         </div>
